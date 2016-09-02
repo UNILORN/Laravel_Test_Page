@@ -20,3 +20,7 @@ Route::get('/another',function(){
 });
 
 Route::get('/myview/{id}', 'Controller@show');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
